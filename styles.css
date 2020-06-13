@@ -6,6 +6,7 @@ header {
     width: 100%;
     background-color: lightskyblue;
     text-align: center;
+    position: fixed;
 }
 
 footer {
@@ -23,7 +24,7 @@ header, h1, h2 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: lightskyblue;
 
     overflow-x: hidden;
 }
@@ -33,6 +34,7 @@ header, h1, h2 {
     font-size: 25px;
     color: #818181;
     display: block;
+    
   }
 #skills, #experience, #contact, #projects {
     margin-left: 160px;
