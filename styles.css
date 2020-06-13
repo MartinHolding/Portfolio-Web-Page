@@ -6,7 +6,6 @@ header {
     width: 100%;
     background-color: lightskyblue;
     text-align: center;
-    position: fixed;
 }
 
 footer {
@@ -25,7 +24,6 @@ header, h1, h2 {
     top: 0;
     left: 0;
     background-color: lightskyblue;
-
     overflow-x: hidden;
 }
 .side-bar a {
@@ -35,6 +33,21 @@ header, h1, h2 {
     color: #818181;
     display: block;
     
+  }
+ #twitter {
+      width: 75px;
+      height: 75px;
+      padding: 15px;
+  }
+  #linkedin {
+      width: 100px;
+      height: 50px;
+      padding: 15px;
+  }
+  #github {
+      width: 55px;
+      height: 55px;
+      padding: 15px;
   }
 #skills, #experience, #contact, #projects {
     margin-left: 160px;
