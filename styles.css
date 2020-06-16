@@ -1,11 +1,12 @@
 body {
-    background-color: mintcream;
+     background-color: lightskyblue;
 }
 
 header {
     width: 100%;
     background-color: lightskyblue;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -34,6 +35,9 @@ header, h1, h2 {
     display: block;
     
   }
+.container {
+    background-color: gainsboro;
+}
  #twitter {
       width: 75px;
       height: 75px;
