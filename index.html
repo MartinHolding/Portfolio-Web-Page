@@ -4,6 +4,7 @@
 <head>
     <title>Martin Holding - Web Developer</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="slideshow.js"></script>
 </head>
 
 <body>
@@ -14,9 +15,9 @@
         <h2> <a href="#skills"> Skills</a>|<a href="#experience"> Experience</a>|<a href="#projects"> Projects</a></h2>
     </header>
     <div class="side-bar">
-        <a href="#twitter"><img id="twitter" src="./images/Twitter_Logo_Blue.png"></a>
-        <a href="#github"> <img id="github" src="./images/GitHub-Mark-32px.png"></a>
-        <a href="#linkedin"><img id="linkedin" src="./images/LI-Logo.png"></a>
+        <a href="https://twitter.com/I_am_holding" target="_blank"><img id="twitter" src="./images/Twitter_Logo_Blue.png"></a>
+        <a href="https://github.com/MartinHolding" target="_blank"> <img id="github" src="./images/GitHub-Mark-32px.png"></a>
+        <a href="https://www.linkedin.com/in/martinholding/" target="_blank"><img id="linkedin" src="./images/LI-Logo.png"></a>
     </div>
     <div class="container">
         <div id="skills">
@@ -53,6 +54,30 @@
         </div>
         <div id="projects">
             <!--Links to my pet JS projects..tetris, memory game etc. -->
+            <h3> Projects </h3>
+            <div id="slideshow-container">
+                <div class="mySlides fade">
+                    <a><img src="./images/Tetris_Screenshot.png">  </a>
+                    <div class="text">Tetris</div>
+                </div>
+                <!--Add another project here in another div called mys=Slides-->
+                <div class="mySlides fade">
+                    <a><img src="./images/Tetris_Screenshot.png">  </a>
+                    <div class="text">Tetris</div>
+                </div>
+                <div class="mySlides fade">
+                    <a><img src="./images/Tetris_Screenshot.png">  </a>
+                    <div class="text">Tetris</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </div> <!--End of main text container-->
 </body>
