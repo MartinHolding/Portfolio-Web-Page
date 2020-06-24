@@ -50,6 +50,8 @@ header, h1, h2 {
     max-width: 1000px;
     position: relative;
     margin: auto;
+    display: flex;
+    justify-content: center;
   }
   
   /* Hide the images by default */
@@ -108,6 +110,10 @@ header, h1, h2 {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    -moz-animation-name: fade;
+    -moz-animation-duration: 1.5s;
+    -o-animation-name: fade;
+    -o-animation-duration: 1.5s;
   }
   
   @-webkit-keyframes fade {
