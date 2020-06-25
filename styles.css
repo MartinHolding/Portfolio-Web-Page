@@ -60,6 +60,12 @@
   border-color: orange;
   border-style: solid;
 }
+.cert-text {
+  text-align: center;
+  align-content: center;
+  background-color: orange;
+}
+
 #cert1 {
   background-image: url("./images/command-line-certificate-1.png");
 }
