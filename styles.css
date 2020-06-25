@@ -50,3 +50,22 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
+.certificate {
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: 300px;
+  border-radius: 10%;
+  border-width: 1px;
+  border-color: orange;
+  border-style: solid;
+}
+#cert1 {
+  background-image: url("./images/command-line-certificate-1.png");
+}
+#cert2 {
+  background-image: url("./images/git-certificate-1.png");
+}
+#cert3 {
+  background-image: url("./images/javascript-sites-certificate-1.png");
+}
