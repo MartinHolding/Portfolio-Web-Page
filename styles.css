@@ -18,19 +18,35 @@
   display:inline-block;
   margin: auto 0;
 }
-#skills-container {
+.main-container {
   display: flex;
-  /*text-align: center;*/
   justify-content: center;
- 
+  align-content: center;
 }
-.skills-card {
+.section-title {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  position: absolute;
+}
+.container-card {
+  padding: 5px;
+  margin: 50px;
+  width: 250px;
+}
+.skills {
   border-style: solid;
   border-color: orange;
   border-width: 1px;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 50px;
-
-  
+  border-radius: 10%;
+}
+.project-img {
+  width: 100px;
+  height: 100px;
+  background-image: url("./images/Twitter_Logo_Blue.png");
+  border-radius: 50%;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
