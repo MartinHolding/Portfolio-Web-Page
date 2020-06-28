@@ -1,5 +1,5 @@
-#banner-container{
-  background-image: url("./images/tmp-laptop.png");
+/* General banner (header and footer) styles */
+.banner-container{
   width: 100%;
   height: 300px;
   background-position: center; /* Center the image */
@@ -10,14 +10,7 @@
   justify-content: center; /*center whole div */
   align-content: center;
 }
-#banner-text {
-  background-color: orange;
-  color: white;
-  height: 100px;
-  width: 100%;
-  display:inline-block;
-  margin: auto 0;
-}
+/* General body styles */
 .main-container {
   display: flex;
   justify-content: center;
@@ -35,12 +28,29 @@
   margin: 50px;
   width: 250px;
 }
+
+/* Main Header Styles */
+
+#banner-text {
+  background-color: orange;
+  color: white;
+  height: 100px;
+  width: 100%;
+  display:inline-block;
+  margin: auto 0;
+}
+#title-banner {
+  background-image: url("./images/tmp-laptop.png");
+}
+
+/* Skills section Styles */
 .skills {
   border-style: solid;
   border-color: orange;
   border-width: 1px;
   border-radius: 10%;
 }
+/* Project section styles */
 .project-img {
   width: 100px;
   height: 100px;
@@ -50,6 +60,7 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
 }
+/*Certificate section styles */
 .certificate {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -59,11 +70,14 @@
   border-width: 1px;
   border-color: orange;
   border-style: solid;
-}
-.cert-text {
-  text-align: center;
+  display: flex;
   align-content: center;
-  background-color: orange;
+  justify-content: center;
+}
+/*maybe put a media query in here for mobile uses for whom hover won't work */
+.certificate:hover {
+  height: 400px;
+  width: 400px;
 }
 
 #cert1 {
@@ -74,4 +88,9 @@
 }
 #cert3 {
   background-image: url("./images/javascript-sites-certificate-1.png");
+}
+
+/* Footer Styles */
+#footer-banner {
+  
 }
