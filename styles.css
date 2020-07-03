@@ -28,6 +28,9 @@
   margin: 50px;
   width: 250px;
 }
+.text-block {
+  display: inline-block;
+}
 
 /* Main Header Styles */
 
@@ -92,5 +95,17 @@
 
 /* Footer Styles */
 #footer-banner {
+  background-color: orange;
+  display: inline-block;
+  height: 150px;
+}
+#footer-banner img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 5px, 10px;
   
+}
+#footer-banner p {
+  display: block;
 }
