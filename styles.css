@@ -29,7 +29,8 @@
   width: 250px;
 }
 .text-block {
-  display: inline-block;
+  
+  
 }
 
 /* Main Header Styles */
@@ -43,7 +44,7 @@
   margin: auto 0;
 }
 #title-banner {
-  background-image: url("./images/tmp-laptop.png");
+  background-image: url("./images/tmp-laptop.jpg");
 }
 
 /* Skills section Styles */
@@ -84,13 +85,13 @@
 }
 
 #cert1 {
-  background-image: url("./images/command-line-certificate-1.png");
+  background-image: url("./images/CommandLine_Certificate-1.png");
 }
 #cert2 {
-  background-image: url("./images/git-certificate-1.png");
+  background-image: url("./images/Git_Certificate-1.png");
 }
 #cert3 {
-  background-image: url("./images/javascript-sites-certificate-1.png");
+  background-image: url("./images/InteractiveJS_Certificate-1.png");
 }
 
 /* Footer Styles */
