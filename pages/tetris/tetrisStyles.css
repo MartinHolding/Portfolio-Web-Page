@@ -30,15 +30,18 @@
 }
 .score-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 .grid {
     width: 200px;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-image: linear-gradient(to bottom right, green, yellow);
+    border: ridge;
     
 }
 
@@ -47,6 +50,7 @@
     height: 20px;
 }
 .tetromino {
+    box-shadow: inset 0px 0px 0px 1px; /*Set border inside the box*/
     background-color: blue;
 }
 
@@ -57,6 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: yellow;
+    border: ridge;
 }
 .mini-grid div{
     height: 20px;
