@@ -69,8 +69,9 @@
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-image: linear-gradient(to bottom right, green, yellow);
     border: ridge;
+    align-items: center;
 }
 .mini-grid div{
     height: 20px;
