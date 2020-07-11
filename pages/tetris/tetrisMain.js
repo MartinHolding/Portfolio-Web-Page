@@ -193,6 +193,13 @@ document.addEventListener('DOMContentLoaded', () => { //this event fires when th
             timerId = setInterval(moveDown, 1000)
             nextRandom = Math.floor(Math.random()*theTetrominoes.length)
             displayShape()
+            //disable up and down scrolling the sidebar
+            window.addEventListener("keydown", function(e) {
+                // space and arrow keys
+                if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+                    e.preventDefault();
+                }
+            }, false);
         }
     })
     //add score
