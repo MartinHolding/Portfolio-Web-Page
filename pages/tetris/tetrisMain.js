@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => { //this event fires when th
             moveDown()
         }
     }
-    document.addEventListener('keyup', control) //on key up, invoke function control
+    
     //move down function
     function moveDown () {
         undraw() //remove old tetromino
@@ -182,26 +182,34 @@ document.addEventListener('DOMContentLoaded', () => { //this event fires when th
             displaySquares[displayIndex + index].style.backgroundColor = colours[nextRandom]
         })
     }
-
+    
     //add functionality to start/pause button
     startBtn.addEventListener('click', () => {
         if(timerId) {
             clearInterval(timerId) //clears the interval object created if start button has been pressed
             timerId = null
+            //re-enable scrolling on arrow keys and stop arrow key control of tetromino
+            window.removeEventListener("keydown", disableScroll, false);
+            document.removeEventListener("keyup", control, false);
         }else { //if the start button is being pressed then draw a shape and start the timer interval
-            draw()
-            timerId = setInterval(moveDown, 1000)
-            nextRandom = Math.floor(Math.random()*theTetrominoes.length)
-            displayShape()
-            //disable up and down scrolling the sidebar
-            window.addEventListener("keydown", function(e) {
-                // space and arrow keys
-                if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
-                    e.preventDefault();
-                }
-            }, false);
+            draw();
+            timerId = setInterval(moveDown, 1000);
+            nextRandom = Math.floor(Math.random()*theTetrominoes.length);
+            displayShape();
+            //disable scrolling on arrow keys and enable rotation of tetromino on arrow keys
+            window.addEventListener("keydown", disableScroll, false);
+            document.addEventListener('keyup', control) //on key up, invoke function control
+    
         }
     })
+    //disable sidebar scrolling on the up/down key press
+    function disableScroll(e) {
+        // space and arrow keys
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
+    }
+        
     //add score
     function addScore () {
         for (let i = 0; i < 199; i+=width){
